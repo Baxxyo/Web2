@@ -50,21 +50,24 @@ nav a {
   color: white;
 }
 
-.sign-in-btn {
-  padding: 10px 20px;
+.btn-login, .btn-signup {
+  padding: 12px 20px;
   background: var(--button-bg);
   color: var(--button-text);
   border-radius: 20px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 10px;
-  color: white;
+.btn-signup {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-signup:hover {
+  background: #ffffff;
+  color: #1f5f3a;
 }
 
 /* ================= SECTIONS ================= */
@@ -103,8 +106,24 @@ h2, h3 {
 footer {
   background: var(--header-footer-bg);
   color: white;
-  padding: 30px;
+  padding: 15px 40px;
   text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center; /* ترتيب النصوص في الوسط */
+  gap: 20px; /* المسافة بين النصوص */
+  align-items: center; /* محاذاة العناصر عموديًا */
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info span {
+  font-size: 14px; /* حجم النص في الفوتر */
 }
 
 .footer-logo-img {
@@ -112,16 +131,9 @@ footer {
   height: auto;
 }
 
-.footer-info {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.footer-info a {
-  color: white;
-  text-decoration: none;
+/* لجعل النصوص تكون على سطر واحد */
+footer .footer-info {
+  flex-wrap: nowrap; /* تأكد من أن النصوص لا تلتف */
 }
 
 /* ================= RESPONSIVE ================= */
@@ -135,3 +147,125 @@ footer {
     gap: 10px;
   }
 }
+
+/* ================= LOGIN PAGE ================= */
+.login-section {
+  padding: 40px 30px;
+  background: var(--page-bg);
+  text-align: center;
+}
+
+.login-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--button-bg);
+}
+
+.btn-login {
+  padding: 12px 20px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sign-up-prompt {
+  font-size: 14px;
+}
+
+.sign-up-prompt a {
+  color: var(--button-bg);
+  text-decoration: none;
+}
+
+.sign-up-prompt a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================= SIGN UP PAGE ================= */
+.signup-section {
+  padding: 40px 30px;
+  background: var(--page-bg);
+  text-align: center;
+}
+
+.signup-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.signup-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: var(--button-bg);
+}
+
+.btn-signup {
+  padding: 12px 20px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-prompt {
+  font-size: 14px;
+}
+
+.login-prompt a {
+  color: var(--button-bg);
+  text-decoration: none;
+}
+
+.login-prompt a:hover {
+  text-decoration: underline;
+}
+
