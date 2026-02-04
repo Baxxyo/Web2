@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="style-admin-view.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="admin-header">
+    <h2>Welcome Admin</h2>
+    <a href="home.html">Log-out</a>
+  </div>
+
+  <div class="section">
+    <h3>My Information</h3>
+    <p>Name: Admin User</p>
+    <p>Email: admin@example.com</p>
+  </div>
+
+  <div class="section">
+    <h3>Reported Recipes</h3>
+    <table>
+      <tr>
+        <th>Recipe Name</th>
+        <th>Recipe Creator</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td><a href="view-recipe.html">Banana oat pancake</a></td>
+        <td>
+          <img src="https://via.placeholder.com/40" class="avatar">
+          [Name]
+        </td>
+       
+        <td>
+          <form>
+            <label><input type="radio" name="action"> Block User</label><br>
+            <label><input type="radio" name="action"> Dismiss Report</label><br>
+            <button type="submit">Submit</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>Blocked Users List</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email Address</th>
+      </tr>
+      <tr>
+        <td>[Name]</td>
+        <td>[email address]</td>
+      </tr>
+      <tr>
+        <td>[Name]</td>
+        <td>[email Address</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
+
+
