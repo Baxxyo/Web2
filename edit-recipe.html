@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HealBite | Edit Recipe</title>
+  <link rel="stylesheet" href="styles-ADDEDIT.css" />
+</head>
+<body>
+
+  <header class="ADDEDIT-navbar">
+    <div class="ADDEDIT-nav-left">
+      <a class="ADDEDIT-brand" href="home.html" aria-label="HealBite Home">
+        <img src="logo.PNG" alt="HealBite logo" class="ADDEDIT-logo" />
+        <span class="ADDEDIT-brand-text">HEAL<span class="ADDEDIT-brand-accent">BITE</span></span>
+      </a>
+    </div>
+
+    <nav class="ADDEDIT-nav-right">
+      <a class="ADDEDIT-link" href="home.html">Home</a>
+      <a class="ADDEDIT-btn ADDEDIT-btn-outline" href="login.html">Log in</a>
+      <a class="ADDEDIT-avatar" href="user.html" title="User">
+        <img src="images/default-user.png" alt="User" />
+      </a>
+    </nav>
+  </header>
+
+  <main class="ADDEDIT-container">
+    <section class="ADDEDIT-card">
+      <h1 class="ADDEDIT-title">Edit Recipe</h1>
+      <p class="ADDEDIT-subtitle">Update recipe details and keep it suitable for special conditions & allergies.</p>
+
+      <form id="editRecipeForm" class="ADDEDIT-form" action="my-recipes.html" method="get">
+        <!-- Name -->
+        <div class="ADDEDIT-row">
+          <label class="ADDEDIT-label" for="recipeName">Name:</label>
+          <input class="ADDEDIT-input" id="recipeName" name="recipeName" type="text"
+                 value="Diabetic Oatmeal Bowl" required />
+        </div>
+
+        <!-- Category -->
+        <div class="ADDEDIT-row">
+          <label class="ADDEDIT-label" for="category">Category:</label>
+          <div class="ADDEDIT-select-wrap">
+            <select class="ADDEDIT-select" id="category" name="category" required>
+              <option disabled>Select</option>
+              <option value="Diabetic" selected>Diabetic</option>
+              <option value="IBS friendly">IBS friendly</option>
+              <option value="Lactose free">Lactose free</option>
+              <option value="Allergy friendly">Allergy friendly</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="ADDEDIT-row ADDEDIT-row-top">
+          <label class="ADDEDIT-label" for="description">Description:</label>
+          <textarea class="ADDEDIT-textarea" id="description" name="description" required>
+High-fiber breakfast with no added sugar. Suitable for diabetic-friendly meal plans.</textarea>
+        </div>
+
+        <!-- Upload Photo + current photo -->
+        <div class="ADDEDIT-row ADDEDIT-row-split">
+          <div class="ADDEDIT-split-left">
+            <label class="ADDEDIT-label" for="photo">Upload Recipe Photo:</label>
+            <input class="ADDEDIT-file" id="photo" name="photo" type="file" accept="image/*" />
+          </div>
+
+          <div class="ADDEDIT-split-right">
+            <div class="ADDEDIT-current-box">
+              <div class="ADDEDIT-current-title">Current Photo:</div>
+              <div class="ADDEDIT-current-media">[photo]</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ADDEDIT-section">
+          <div class="ADDEDIT-section-head">
+            <h2 class="ADDEDIT-section-title">Ingredients:</h2>
+            <button type="button" class="ADDEDIT-btn ADDEDIT-btn-light" id="addIngredientBtn">
+              + Add another ingredient
+            </button>
+          </div>
+
+          <div id="ingredientsList" class="ADDEDIT-stack">
+            <div class="ADDEDIT-ingredient" data-idx="1">
+              <div class="ADDEDIT-ingredient-label">Ingredient 1:</div>
+
+              <div class="ADDEDIT-inline">
+                <label class="ADDEDIT-mini-label" for="ingName1">Name:</label>
+                <input class="ADDEDIT-input" id="ingName1" name="ingName1" type="text"
+                       value="Rolled oats" required />
+              </div>
+
+              <div class="ADDEDIT-inline">
+                <label class="ADDEDIT-mini-label" for="ingQty1">Quantity:</label>
+                <input class="ADDEDIT-input" id="ingQty1" name="ingQty1" type="text"
+                       value="1/2 cup" required />
+              </div>
+
+              <button type="button" class="ADDEDIT-icon-btn ADDEDIT-danger"
+                      title="Remove ingredient" aria-label="Remove ingredient" disabled>✕</button>
+            </div>
+
+            <div class="ADDEDIT-ingredient" data-idx="2">
+              <div class="ADDEDIT-ingredient-label">Ingredient 2:</div>
+
+              <div class="ADDEDIT-inline">
+                <label class="ADDEDIT-mini-label" for="ingName2">Name:</label>
+                <input class="ADDEDIT-input" id="ingName2" name="ingName2" type="text"
+                       value="Unsweetened almond milk" required />
+              </div>
+
+              <div class="ADDEDIT-inline">
+                <label class="ADDEDIT-mini-label" for="ingQty2">Quantity:</label>
+                <input class="ADDEDIT-input" id="ingQty2" name="ingQty2" type="text"
+                       value="1 cup" required />
+              </div>
+
+              <button type="button" class="ADDEDIT-icon-btn ADDEDIT-danger"
+                      title="Remove ingredient" aria-label="Remove ingredient">✕</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="ADDEDIT-section">
+          <div class="ADDEDIT-section-head">
+            <h2 class="ADDEDIT-section-title">Instructions:</h2>
+            <button type="button" class="ADDEDIT-btn ADDEDIT-btn-light" id="addStepBtn">
+              + Add another step
+            </button>
+          </div>
+
+          <div id="stepsList" class="ADDEDIT-stack">
+            <div class="ADDEDIT-step" data-idx="1">
+              <div class="ADDEDIT-step-label">Step 1:</div>
+              <input class="ADDEDIT-input" id="step1" name="step1" type="text"
+                     value="Cook oats with almond milk on low heat for 5–7 minutes." required />
+              <button type="button" class="ADDEDIT-icon-btn ADDEDIT-danger"
+                      title="Remove step" aria-label="Remove step" disabled>✕</button>
+            </div>
+
+            <div class="ADDEDIT-step" data-idx="2">
+              <div class="ADDEDIT-step-label">Step 2:</div>
+              <input class="ADDEDIT-input" id="step2" name="step2" type="text"
+                     value="Add cinnamon and berries, then serve warm." required />
+              <button type="button" class="ADDEDIT-icon-btn ADDEDIT-danger"
+                      title="Remove step" aria-label="Remove step">✕</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video (optional) + current video -->
+        <div class="ADDEDIT-section">
+          <h2 class="ADDEDIT-section-title">Video or URL (Optional):</h2>
+
+          <div class="ADDEDIT-row ADDEDIT-row-split">
+            <div class="ADDEDIT-split-left">
+              <label class="ADDEDIT-label" for="videoFile">Upload Video:</label>
+              <input class="ADDEDIT-file" id="videoFile" name="videoFile" type="file" accept="video/*" />
+
+              <div class="ADDEDIT-spacer"></div>
+
+              <label class="ADDEDIT-label" for="videoUrl">Video URL:</label>
+              <input class="ADDEDIT-input" id="videoUrl" name="videoUrl" type="url"
+                     value="https://example.com/video" />
+            </div>
+
+            <div class="ADDEDIT-split-right">
+              <div class="ADDEDIT-current-box">
+                <div class="ADDEDIT-current-title">Current Video:</div>
+                <div class="ADDEDIT-current-media">[video]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ADDEDIT-actions">
+          <a class="ADDEDIT-btn ADDEDIT-btn-outline" href="my-recipes.html">Cancel</a>
+          <button class="ADDEDIT-btn ADDEDIT-btn-primary" type="submit">Update Recipe</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="recipe-form.js"></script>
+  <script>
+    HealBiteRecipeForm.init({
+      ingredientsListId: "ingredientsList",
+      stepsListId: "stepsList",
+      addIngredientBtnId: "addIngredientBtn",
+      addStepBtnId: "addStepBtn",
+      startIngredients: 2,
+      startSteps: 2
+    });
+  </script>
+</body>
+</html>
