@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealBite - User Page</title>
+  <link rel="stylesheet" href="style-Userpage.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="HealBite Logo" class="logo">
+
+    <nav>
+      <a class="active" href="home.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="my-recipes.html">My Recipes</a>
+      <a href="favorites.html">Favorites</a>
+    </nav>
+
+    <a class="signout" href="home.html">Sign-out</a>
+  </header>
+
+  <main class="page">
+
+    <!-- Welcome -->
+    <section class="welcome">
+      <div class="welcome__left">
+        <div class="avatarWrap">
+          <img class="avatarImg" src="leen.jpg" alt="User photo">
+        </div>
+
+        <div class="welcomeCard">
+          <div class="welcomeTitle">Welcome, leen</div>
+          <div class="userBlock">
+            <div class="userName">leen</div>
+            <div class="userEmail">leen@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome__right">
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__label">Total Likes</div>
+            <div class="stat__value"><span>13</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Total Recipes</div>
+            <div class="stat__value"><span>132</span></div>
+          </div>
+        </div>
+
+        <a class="pillBtn" href="My-recipes-Page.html">My Recipes</a>
+      </div>
+    </section>
+
+    <!-- All  Recipes -->
+    <section class="section">
+      <div class="section__top">
+        <h2 class="section__title">All Available Recipes</h2>
+
+        <div class="filter">
+          <select class="filterSelect">
+            <option>All Categories</option>
+            <option>Diabetic-Friendly</option>
+            <option>IBS Friendly</option>
+            <option>Lactose-Free</option>
+            <option>Allergy Friendly</option>
+          </select>
+          <button class="filterBtn">Filter</button>
+        </div>
+      </div>
+
+      <!-- cards  -->
+      <div class="cardsWrap">
+        <article class="recipeCard">
+          <a class="recipeCard__name" href="view-recipe.html">Oats Banana Pancake</a>
+          <img class="thumb" src="r1.2.jpg" alt="Recipe photo">
+          <div class="recipeCard__row">
+            <div class="creator">
+              <img class="creator__img" src="c1.png" alt="">
+              <span class="creator__name">Sara</span>
+            </div>
+            <div class="pill">
+              <span class="pill__label">Likes</span>
+              <span class="pill__value">24</span>
+            </div>
+          </div>
+          <div class="tag">Diabetic-Friendly</div>
+        </article>
+
+        <article class="recipeCard">
+          <a class="recipeCard__name" href="view-recipe.html">Low FODMAP Salad</a>
+          <img class="thumb" src="r2.jpg" alt="Recipe photo">
+          <div class="recipeCard__row">
+            <div class="creator">
+              <img class="creator__img" src="c2.png" alt="">
+              <span class="creator__name">Noor</span>
+            </div>
+            <div class="pill">
+              <span class="pill__label">Likes</span>
+              <span class="pill__value">11</span>
+            </div>
+          </div>
+          <div class="tag">IBS Friendly</div>
+        </article>
+
+        <article class="recipeCard">
+          <a class="recipeCard__name" href="view-recipe.html">Lactose-Free Smoothie</a>
+          <img class="thumb" src="r3.jpg" alt="Recipe photo">
+          <div class="recipeCard__row">
+            <div class="creator">
+              <img class="creator__img" src="c3.png" alt="">
+              <span class="creator__name">Maha</span>
+            </div>
+            <div class="pill">
+              <span class="pill__label">Likes</span>
+              <span class="pill__value">8</span>
+            </div>
+          </div>
+          <div class="tag">Lactose-Free</div>
+        </article>
+
+        <article class="recipeCard">
+          <a class="recipeCard__name" href="view-recipe.html">Nut-Free Energy Bites</a>
+          <img class="thumb" src="r4.jpg" alt="Recipe photo">
+          <div class="recipeCard__row">
+            <div class="creator">
+              <img class="creator__img" src="c4.png" alt="">
+              <span class="creator__name">Lina</span>
+            </div>
+            <div class="pill">
+              <span class="pill__label">Likes</span>
+              <span class="pill__value">19</span>
+            </div>
+          </div>
+          <div class="tag">Allergy Friendly</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- My Favourite Recipes -->
+    <section class="section">
+      <h2 class="section__title">My Favourite Recipes</h2>
+
+      <div class="cardsWrap cardsWrap--small">
+        <article class="recipeCard">
+          <a class="recipeCard__name" href="view-recipe.html">Lactose-Free Smoothie</a>
+          <img class="thumb" src="r3.jpg" alt="Recipe photo">
+          <div class="recipeCard__row">
+            <div class="tag">Lactose-Free</div>
+            <a class="removeLink" href="Userpage.html">Remove</a>
+          </div>
+        </article>
+
+        <article class="recipeCard">
+          <a class="recipeCard__name" href="view-recipe.html">Low FODMAP Salad</a>
+          <img class="thumb" src="r2.jpg" alt="Recipe photo">
+          <div class="recipeCard__row">
+            <div class="tag">IBS Friendly</div>
+            <a class="removeLink" href="Userpage.html">Remove</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bottombar"></footer>
+</body>
+</html>
+
