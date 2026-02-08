@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Recipes | HealBite</title>
+  <link rel="stylesheet" href="style-My-recipes-Page.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo.png" alt="HealBite Logo" class="logo">
+    </div>
+
+
+
+    <a href="home.html" class="signout">Sign-out</a>
+  </header>
+
+  <main class="page">
+
+    <div class="pageTop">
+      <h1>My Recipes</h1>
+      <a href="add-recipe.html" class="addBtn">Add Recipe</a>
+    </div>
+
+    <table class="recipesTable">
+      <thead>
+        <tr>
+          <th>Recipe</th>
+          <th>Ingredients</th>
+          <th>Instructions</th>
+          <th>Video</th>
+          <th>Likes</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Recipe 1: Diabetic-Friendly -->
+        <tr>
+          <td class="recipeCell">
+            <a class="recipeLink" href="view-recipe.html">
+              <img class="recipePhoto" src="rc1.jpg" alt="Recipe photo">
+              <div class="recipeName">Grilled Chicken & Veggies</div>
+            </a>
+          </td>
+          <td>
+            <ul class="list">
+              <li>Chicken breast — 200g</li>
+              <li>Zucchini — 1</li>
+              <li>Bell pepper — 1/2</li>
+              <li>Olive oil — 1 tbsp</li>
+              <li>Salt & pepper — to taste</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="list">
+              <li>Season chicken and veggies.</li>
+              <li>Grill chicken 5–6 min each side.</li>
+              <li>Grill veggies until tender.</li>
+            </ul>
+          </td>
+          <td><a class="videoLink" href="#">Video</a></td>
+          <td class="center">19</td>
+          <td class="center"><a class="actionLink" href="edit-recipe.html">Edit</a></td>
+          <td class="center"><a class="deleteLink" href="my-recipes.html">Delete</a></td>
+        </tr>
+
+        <!-- Recipe 2: IBS Friendly -->
+        <tr>
+          <td class="recipeCell">
+            <a class="recipeLink" href="view-recipe.html">
+              <img class="recipePhoto" src="https://via.placeholder.com/120x80" alt="Recipe photo">
+              <div class="recipeName">Rice Noodles with Carrots</div>
+            </a>
+          </td>
+          <td>
+            <ul class="list">
+              <li>Rice noodles — 150g</li>
+              <li>Carrot — 1</li>
+              <li>Green onion (tops) — 1 tbsp</li>
+              <li>Soy sauce — 1 tbsp</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="list">
+              <li>Boil noodles per package.</li>
+              <li>Sauté carrots lightly.</li>
+              <li>Toss noodles with sauce.</li>
+            </ul>
+          </td>
+          <td class="muted">no video for recipe</td>
+          <td class="center">9</td>
+          <td class="center"><a class="actionLink" href="edit-recipe.html">Edit</a></td>
+          <td class="center"><a class="deleteLink" href="my-recipes.html">Delete</a></td>
+        </tr>
+
+        <!-- Recipe 3: Lactose-Free -->
+        <tr>
+          <td class="recipeCell">
+            <a class="recipeLink" href="view-recipe.html">
+              <img class="recipePhoto" src="https://via.placeholder.com/120x80" alt="Recipe photo">
+              <div class="recipeName">Lactose-Free Berry Oat Smoothie</div>
+            </a>
+          </td>
+          <td>
+            <ul class="list">
+              <li>Lactose-free milk — 1 cup</li>
+              <li>Berries — 1/2 cup</li>
+              <li>Oats — 2 tbsp</li>
+              <li>Honey (optional) — 1 tsp</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="list">
+              <li>Add all to blender.</li>
+              <li>Blend 40 seconds.</li>
+              <li>Serve chilled.</li>
+            </ul>
+          </td>
+          <td><a class="videoLink" href="#">Video</a></td>
+          <td class="center">14</td>
+          <td class="center"><a class="actionLink" href="edit-recipe.html">Edit</a></td>
+          <td class="center"><a class="deleteLink" href="my-recipes.html">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <footer class="bottombar"></footer>
+</body>
+</html>
