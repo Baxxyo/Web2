@@ -189,7 +189,7 @@ header {
 .pillBtn,
 .addBtn {
   padding: 12px 24px;
-  background: var(--accent-bright);
+  background:var(--primary-green);
   color: var(--white);
   border-radius: var(--radius-xl);
   text-decoration: none;
@@ -203,13 +203,12 @@ header {
 .btn-login:hover,
 .pillBtn:hover,
 .addBtn:hover {
-  background: var(--primary-green);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
+  background: var(--white);
+  color: var(--primary-green);
 }
 
 .btn-signup {
-  background: transparent;
+  background:var(--primary-green);
   color: var(--white);
   border: 2px solid var(--white);
 }

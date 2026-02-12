@@ -8,18 +8,20 @@
 </head>
 <body>
 
-<header>
-  <div class="header-left">
-    <img src="logo.png" alt="Healbite Logo" class="logo-img">
-  </div>
 
-  <nav>
-    <ul>
-      <li><a href="login.html" class="btn-login">Log in</a></li>
-      <li><a href="signup.html" class="btn-signup">New User? Sign-up</a></li>
-    </ul>
-  </nav>
-</header>
+<header class="ADDEDIT-navbar">
+    <div class="ADDEDIT-nav-left">
+      <a class="ADDEDIT-brand" href="home.html" aria-label="HealBite Home">
+        <img src="logo.PNG" alt="HealBite logo" class="ADDEDIT-logo" />
+        <span class="ADDEDIT-brand-text">HEAL<span class="ADDEDIT-brand-accent">BITE</span></span>
+      </a>
+    </div>
+
+    <nav class="ADDEDIT-nav-right">
+      <a class="ADDEDIT-btn ADDEDIT-btn-outline" href="signup.html">New User? Sign-up</a>
+      <a class="ADDEDIT-btn ADDEDIT-btn-outline" href="login.html">Log in</a>
+    </nav>
+  </header>
 
 <main>
   <section class="vision">
@@ -32,26 +34,27 @@
   <section class="activities">
     <h2>Recipe Categories</h2>
     <div class="activity-list">
-      <article class="home-card">
+      <article class="home-card" onclick="location.href='view-recipe.html'">
         <h3>Diabetes</h3>
         <p>Foods and recipes designed to support people with diabetes by helping maintain stable blood sugar levels. They are low in added sugars, use low glycemic index carbohydrates, and provide a balanced combination of fiber, protein, and healthy fats.</p>
       </article>
 
-      <article class="home-card">
+      <article class="home-card" onclick="location.href='view3.html'">
         <h3>IBS Friendly</h3>
         <p>Foods and recipes suitable for individuals with Irritable Bowel Syndrome (IBS). They focus on easily digestible ingredients and limit high-FODMAP foods that may trigger bloating, discomfort, or digestive issues.</p>
       </article>
 
-      <article class="home-card">
+      <article class="home-card" onclick="location.href='view2.html'">
         <h3>Lactose Free</h3>
         <p>Foods and recipes that contain no lactose, making them suitable for individuals with lactose intolerance. They are prepared using lactose-free dairy products or plant-based milk alternatives.</p>
       </article>
       
-      <article class="home-card">
+      <article class="home-card" onclick="location.href='view3.html'">
         <h3>Allergy Friendly</h3>
         <p>Foods and recipes designed to minimize the risk of food allergies. They are free from common allergens such as nuts, eggs, gluten, or soy, with clear and transparent ingredient labeling.</p>
       </article>
     </div>
+    <button type="button" class="btn-login" onclick="location.href='signup.html'" style="margin-left: 40%;">join us to explore more recipes!!</button>
   </section>
 </main>
 

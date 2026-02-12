@@ -8,17 +8,20 @@
 </head>
 <body>
 
-<header>
-  <div class="header-left">
-    <img src="logo.png" alt="Healbite Logo" class="logo-img">
-  </div>
+<header class="ADDEDIT-navbar">
+    <div class="ADDEDIT-nav-left">
+      <a class="ADDEDIT-brand" href="home.html" aria-label="HealBite Home">
+        <img src="logo.PNG" alt="HealBite logo" class="ADDEDIT-logo" />
+        <span class="ADDEDIT-brand-text">HEAL<span class="ADDEDIT-brand-accent">BITE</span></span>
+      </a>
+    </div>
 
-  <nav>
-    <ul>
-      <li><a href="home.html" class="btn-login">Back to Home</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="ADDEDIT-nav-right">
+      <a class="ADDEDIT-link" href="home.html">Home</a>
+      <a class="ADDEDIT-btn ADDEDIT-btn-outline" href="login.html">Log in</a>
+      </a>
+    </nav>
+  </header>
 
 <main>
   <section class="signup-section">
@@ -36,8 +39,7 @@
       <label for="confirm-password">Confirm Password</label>
       <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
 
-      <button type="submit" class="btn-signup">Sign Up</button>
-
+      <button type="button" class="btn-signup" onclick="location.href='Userpage.html'">Sign Up</button>
       <p class="login-prompt">Already have an account? <a href="login.html">Log in</a></p>
     </form>
   </section>
